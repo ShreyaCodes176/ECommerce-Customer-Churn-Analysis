@@ -1,4 +1,6 @@
 #  ECommerce-Customer-Churn-Analysis
+
+![Project Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ## Project Overview
 
 An **end-to-end** data science project focused on analyzing customer behavior, predicting churn using machine learning, and delivering actionable business insights through an interactive dashboard.
@@ -184,7 +186,3 @@ These insights highlight the importance of customer experience, incentives, and 
 ## 📌 Conclusion
 
 This analysis provides valuable insights into customer churn behavior in an e-commerce environment. By understanding factors such as customer satisfaction, complaints, purchase recency, and order categories, businesses can design better strategies to improve retention and customer experience.
-
-## 📈 Project Status
-
-🚧 Completed!
