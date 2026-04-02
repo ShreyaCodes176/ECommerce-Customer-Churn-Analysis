@@ -1,9 +1,17 @@
 #  ECommerce-Customer-Churn-Analysis
 ## Project Overview
 
-This project performs Exploratory Data Analysis (EDA) and preliminary preprocessing on an E-commerce Customer Churn dataset to understand the factors influencing customer churn. The goal is to identify behavioral patterns and variables that contribute to customers leaving the platform.
+An **end-to-end** data science project focused on analyzing customer behavior, predicting churn using machine learning, and delivering actionable business insights through an interactive dashboard.
+
 
 Customer churn is a critical problem for online businesses because retaining existing customers is significantly cheaper than acquiring new ones. Through visualization and statistical analysis, this project aims to uncover insights that can help businesses improve customer retention strategies.
+
+![EDA](eda.png)
+![EDA](corr.png)
+![Dashboard](dashboard.png)
+![DashboardInteractive](dashboardInteractive.png)
+![Analysis](analysis.png)
+---
 
 ## 🎯 Objectives
 
@@ -13,11 +21,14 @@ Customer churn is a critical problem for online businesses because retaining exi
 
 3. Perform data cleaning and preprocessing for reliable analysis.
 
-4. Use data visualization techniques to reveal meaningful trends.
+4. Use EDA and data visualization techniques to reveal meaningful trends.
 
-5. Prepare the dataset for future predictive modeling.
+5. Build machine learning models to predict churn.
+
+6. Visualize insights using an interactive Power BI dashboard
 
 ## 📊 Dataset Features
+Source: Kaggle – E-Commerce Customer Churn Dataset 
 
 The dataset contains customer attributes related to their purchasing behavior and experience with the platform.
 
@@ -59,10 +70,15 @@ Python
 
 4. Seaborn – Advanced statistical plots
 
-5. Scikit-learn – Machine learning preparation
+5. Scikit-learn – Machine learning and Evaluation Metrics
+
+6. Pickle - Deployemnt
+
+### Dashboard Environment
+Power BI
 
 ### Development Environment
-Jupyter Notebook
+Jupyter Notebook, VS Code 
 
 ## 💡 Skills Demonstrated
 
@@ -76,72 +92,78 @@ This project showcases the following data analytics skills:
 
 4. Data Visualization
 
-5. Feature Understanding
+5. Understanding Features and their Importance
 
 6. Outlier Detection
 
 7. Dataset Preparation for Machine Learning
 
-8. Python Data Analysis Workflow
+8. Machine Learning
 
-## 🧹 Data Preprocessing
+9. Model Evaluation
 
-Several preprocessing techniques were applied to prepare the dataset for analysis.
+10. Prediction Systems
 
-### Handling Missing Values
+11. BI using Dashboards
 
-  1. Median imputation was used for numerical columns
-
-  2. Remaining null values were removed where necessary.
-
-### Data Preparation
-
-1. Dataset converted into a structured Pandas DataFrame
-
-2. Variables separated into numerical and categorical features
-
-3. Data prepared for visualization and modeling
+12. Python Data Analysis Workflow
 
 
-## 📈 Exploratory Data Analysis (EDA)
+## 🧠 Project Workflow
 
-Multiple visualization techniques were used to understand the data distribution and relationships between variables.
+### 1. Data Preprocessing
+- Handling missing values
+- Encoding categorical variables
+- Feature scaling
 
-1️⃣ Churn Distribution
+### 2. Exploratory Data Analysis (EDA)
+- Churn distribution analysis
+- Customer segmentation
+- Feature relationships with churn
+- Correlation analysis
 
-Pie chart showing percentage of customers retained vs churned.
+### 3. Machine Learning Models
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
 
-2️⃣ Category vs Churn
+### 4. Model Evaluation
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC Score
 
-Count plots comparing churn across Preferred order categories or Marital status groups
+### 5. Feature Importance Analysis
+- Identified key drivers of churn
 
-3️⃣ Customer Satisfaction Analysis
+![feature](feature.png)
 
-Pie chart showing distribution of satisfaction scores.
 
-4️⃣ Complaint Impact
+### 6. Churn Prediction System
+- Predicts whether a customer will churn
+- Outputs churn probability
 
-Stacked bar chart analyzing the relationship between customer complaints and churn.
+### 7. Dashboard (Power BI)
+- Interactive visual analytics
+- Business-focused insights
 
-5️⃣ Outlier Detection
 
-Boxplots used to inspect numerical variables such as:
+## 🤖 Machine Learning Results
 
-1. Tenure
+| Models              | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---------------------|----------|-----------|--------|----------|---------|
+| Logistic Regression | 88.33%   | 76.06%    | 41.86% | 54%      | 85.78%  |
+| Decision Tree       | 90.62%   | 69.78%    | 75.19% | 72.39%   | 84.42%  |
+| Random Forest       | 94.80%   | 85.48%    | 82.17% | 83.79%   |      -- |
 
-2. Warehouse distance
 
-3. Days since last order
+## 🔮 Churn Prediction
 
-6️⃣ Behavioral Patterns
+The model predicts:
+- ✅ Whether a customer will churn  
+- 📈 Probability of churn  
 
-1. KDE plots used to analyze recency vs churn behavior.
-
-2. Scatter plots used to visualize relationships such as DaySinceLastOrder vs CashbackAmount
-
-7️⃣ Category Churn Heatmap
-
-Heatmap visualization to identify which product categories have higher churn rates.
 
 ## 🔍 Key Findings/Insights
 
@@ -155,45 +177,9 @@ Some important patterns observed from the analysis:
 
 4. Customer satisfaction scores influence retention.
 
-5. Customers receiving higher cashback incentives show different purchasing behaviors.
+5. Customers with low engagement (orders, app usage) are at higher risk.
 
 These insights highlight the importance of customer experience, incentives, and engagement in preventing churn.
-
-## 🤖 Machine Learning Preparation
-
-The dataset was prepared for predictive modeling by:
-
-1. Separating features (X) and target variable (y).
-
-2. Performing train-test split using sklearn.
-
-3. Identifying variables suitable for outlier removal and model training.
-
-Future versions of this project will include machine learning models to predict churn probability.
-
-## 🚀 Future Improvements
-
-Planned enhancements for this project include:
-
-### Implement machine learning models such as:
-
-1. Logistic Regression
-
-2. Random Forest
-
-3. Gradient Boosting
-
-### Feature engineering
-
-### Model evaluation using:
-
-1. Accuracy
-
-2. ROC-AUC
-
-3. Precision & Recall
-
-### Building a customer churn prediction dashboard
 
 ## 📌 Conclusion
 
@@ -201,5 +187,4 @@ This analysis provides valuable insights into customer churn behavior in an e-co
 
 ## 📈 Project Status
 
-🚧 Work in Progress  
-Future updates will include machine learning models for churn prediction.
+🚧 Completed!
