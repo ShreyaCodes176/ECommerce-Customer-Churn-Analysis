@@ -157,7 +157,7 @@ This project showcases the following data analytics skills:
 |---------------------|----------|-----------|--------|----------|---------|
 | Logistic Regression | 88.33%   | 76.06%    | 41.86% | 54%      | 85.78%  |
 | Decision Tree       | 90.62%   | 69.78%    | 75.19% | 72.39%   | 84.42%  |
-| Random Forest       | 94.80%   | 85.48%    | 82.17% | 83.79%   |      -- |
+| Random Forest       | 94.42%   | 84%       | 81.40% | 82.68%   | --      |
 
 
 ## 🔮 Churn Prediction
